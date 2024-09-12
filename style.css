@@ -1,0 +1,37 @@
+body{
+    margin: 0px;
+}
+
+a {
+    color: lightgray;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover{
+    color: white;
+}
+
+header {
+    background-color: black;
+    padding: 10px;
+}
+
+#menu_princ {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu_princ li {
+    margin-inline: 20px;
+    padding-inline: 10px;
+}
+
+#menu_princ a {
+    text-decoration: none;
+}
