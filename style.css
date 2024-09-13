@@ -3,11 +3,11 @@ body{
 }
 
 a {
-    color: lightgray;
+    color: white;
 }
 
 a:visited {
-    color: gray;
+    color: white;
 }
 
 a:hover{
@@ -15,11 +15,13 @@ a:hover{
 }
 
 header {
-    background-color: black;
-    padding: 10px;
+    background-color: #171717;
+    margin: 0px;
 }
 
-#menu_princ {
+.menu {
+    line-height: 250%;
+    align-items: center;
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -27,11 +29,28 @@ header {
     padding: 0px;
 }
 
-#menu_princ li {
-    margin-inline: 20px;
-    padding-inline: 10px;
+.menu li {
+    position: relative; /*cambio*/
+    padding-inline: 20px;
 }
 
-#menu_princ a {
+.menu a {
     text-decoration: none;
+}
+
+.menu li:hover .sub_menu {
+    display: block;
+}
+
+.sub_menu {
+    background-color: #363535;
+    display: none;
+    list-style: none;
+    position: absolute;
+    padding: 0px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin: 0px;
+    margin-top: 0px;
+    left: 0px;
 }
