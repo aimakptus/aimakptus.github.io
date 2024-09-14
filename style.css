@@ -1,52 +1,60 @@
 body{
-    margin: 0px;
+    margin: 0px; /* Margen completa*/
 }
 
 a {
-    color: white;
+    color: white; /* Color base de los enlaces */
+    padding-bottom: 12px; /* Para alargar la "hitbox" del <a> */
 }
 
 a:visited {
-    color: white;
+    color: white; /* Color de enlaces visitados */
 }
 
 a:hover{
-    color: white;
+    text-shadow: 0px 0px 5px rgba(230, 180, 10, 0.8); /* Xpx Ypx - (Desplazamiento desde el item) | Apx (Nivel de desenfoque)*/
+    color: rgba(230, 180, 10, 0.8);
 }
 
 header {
     background-color: #171717;
+    padding: 0px;
+    padding-top: 10px; /* Amplia la zona superior del header */
     margin: 0px;
 }
 
 .menu {
-    line-height: 250%;
-    align-items: center;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
+    font-family: Montserrat;    /* Buscar una segunda fuente */
+    line-height: 250%; /*Aumenta el grosor en el header*/
+    text-transform: uppercase; /* Pone en mayúsculas el menú*/
+    letter-spacing: 0.1em; /* Separa un poco más las letras */
+    font-weight: 800; /* Grosor de la letra */
+    align-items: center; /* Alínea los elementos en el centro de arriba a abajo */
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Permite que la <ul> sea más facil de configurar */
+    justify-content: flex-end; /* Pone el contenido a la derecha */
     margin: 0px;
     padding: 0px;
 }
 
 .menu li {
-    position: relative; /*cambio*/
-    padding-inline: 20px;
+    position: relative; /* Ubica el submenú bajo la <li> padre */
+    padding-inline: 20px; /* Separa los elementos de la lista */
 }
 
 .menu a {
-    text-decoration: none;
+    text-decoration: none; /* Le quita el estilo a los link */
 }
 
 .menu li:hover .sub_menu {
-    display: block;
+    display: block; /* Permite ver el submenú en bloque */
 }
 
 .sub_menu {
-    background-color: #363535;
-    display: none;
-    list-style: none;
-    position: absolute;
+    background-color: #171717;
+    display: none; /* Oculta el submenú hasta que el mouse este sobre él */
+    list-style: none; /* Quita los puntos de la lista */
+    position: absolute; /* Ancla el submenú al menú padre y puede aparecer sobre el resto de la página */
     padding: 0px;
     padding-bottom: 15px;
     padding-top: 15px;
